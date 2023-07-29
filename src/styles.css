@@ -1,0 +1,225 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  font-family: sans-serif;
+  /* text-align: center; */
+  display: flex;
+}
+.App > aside {
+  width: 20%;
+  height: 100vh;
+}
+.App > main {
+  width: 80%;
+}
+
+/*Navbar*/
+.nav-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.navitem {
+  text-decoration: none;
+  color: black;
+  margin: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.navitem > span {
+  font-size: 1.3rem;
+  font-weight: 1000;
+}
+
+/* Category  */
+.category-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.category-card {
+  margin: 1rem;
+  height: 240px;
+  cursor: pointer;
+}
+.category-card > img {
+  height: 200px;
+  width: 250px;
+}
+
+/*CategoryVideoListing.js*/
+.video-card-container {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/*VideoCard*/
+.video-card {
+  display: flex;
+  /* width: 100%; */
+  cursor: pointer;
+  position: relative;
+}
+.video-card > div {
+  position: relative;
+}
+.video-info {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.video-deatil > :nth-child(1) {
+  /* width: 50px; */
+  width: 250px;
+  font-weight: 600;
+  overflow-wrap: break-word;
+}
+.creator-image {
+  height: 50px;
+  /* width: 80px; */
+}
+.icons-watchlater {
+  position: absolute;
+  background-color: white;
+  width: 10%;
+  right: 0%;
+  padding-left: 0.5rem;
+  width: 30px;
+  cursor: pointer;
+}
+
+/*Explore*/
+.searchInput {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0.5rem;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.searchInput > ::placeholder {
+  text-align: center;
+}
+
+/**/
+.Modal-wrapper {
+  position: fixed !important;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(1px);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* top: 40%; */
+  border: 1px solid red;
+}
+.Modal {
+  /* width: 50%; */
+  /* width: 100%; */
+  background-color: #001527;
+  position: relative;
+  right: 5%;
+  top: 5%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+.ADDplaylist-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 3rem 1rem;
+}
+.ADDplaylist-container > form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+  padding-top: 1rem;
+  min-width: 400px;
+  max-width: 600px;
+}
+.ADDplaylist-container > form > input {
+  padding: 0.5rem;
+}
+.ADDplaylist-container > form > button {
+  padding: 0.3rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  color: white;
+  background-color: blue;
+  cursor: pointer;
+}
+
+.singleVideo_page {
+  width: 100%;
+}
+.singleVideo_page > main {
+  width: 70%;
+}
+.video-features > span {
+  cursor: pointer;
+}
+
+.video-features {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+}
+.video-detail {
+  display: flex;
+}
+.playlist-modal {
+  position: absolute;
+  width: 200px;
+  top: 100%;
+  /* left: -100%; */
+  right: 0%;
+}
+
+.addplaylist-container {
+  padding: 1rem;
+  background-color: gray;
+}
+.addPlaylist-item {
+  padding: 0.5rem 0rem;
+}
+.addPlaylist-item > span {
+  display: flex;
+  color: black;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.playlist-container {
+  display: flex;
+  gap: 12px;
+}
+.Add-playlist {
+  margin-top: 3rem;
+  margin-left: 1rem;
+}
+.playlist-thumbnail {
+  height: 200px;
+  width: 400px;
+}
+.playlist-cursor {
+  cursor: pointer;
+}
+.pageTitle {
+  margin: 1rem 0rem;
+}
